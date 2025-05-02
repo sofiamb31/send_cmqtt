@@ -72,6 +72,12 @@ if st.button('Enviar valor analógico'):
 else:
     st.write('')
 
-
+st.markdown("""
+    <style>
+        .stApp {
+            background-color: #f9e37c;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 
