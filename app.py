@@ -3,6 +3,7 @@ import time
 import streamlit as st
 import json
 import platform
+from PIL import Image
 
 # Muestra la versión de Python junto con detalles adicionales
 st.write("Versión de Python:", platform.python_version())
@@ -28,6 +29,9 @@ port=1883
 client1= paho.Client("GIT-HUB")
 client1.on_message = on_message
 
+image = Image.open('bingo.jpg')
+
+st.image(image, caption= 'te quiero mucho bingo')
 
 
 st.title("MQTT Control")
