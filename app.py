@@ -29,7 +29,7 @@ port=1883
 client1= paho.Client("GIT-HUB")
 client1.on_message = on_message
 
-image = Image.open('bingo.jpg')
+image = Image.open('mqqt.jpg')
 
 st.image(image, caption= 'te quiero mucho bingo')
 
